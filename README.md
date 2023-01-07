@@ -31,7 +31,7 @@ contr2 = food_x
 contr3 = snake_head_y
 contr4 = food_y
 ...
-contr16 = ( self.possible_actions[5] * self.steps ) + self.gamescores
+contr16 = ( -1 * self.possible_actions[5] * self.steps ) + self.gamescores
 ```
 
 #### Function request_possible_action ####

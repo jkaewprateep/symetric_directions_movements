@@ -34,6 +34,10 @@ contr4 = food_y
 contr16 = ( self.possible_actions[5] * self.steps ) + self.gamescores
 ```
 
+#### Function request_possible_action ####
+
+Only transform stage rules into tuple as ```( 0,  0,  1,  1,  1, -1 )``` , the robots stage where there are 4 conditions of it ```1. condition 1: moving up``` ,  ```2. condition 2: moving down``` ,  ```3. condition 3: moving right```, ```4. condition 4: moving left``` , ```5. lower path``` and ```6. upper path``` .
+
 ```
 def request_possible_action( self ):
     ( width, height ) = self.PLE.getScreenDims()

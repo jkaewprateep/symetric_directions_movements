@@ -70,3 +70,22 @@ def request_possible_action( self ):
 
     return stage_position
 ```
+
+## Sample output ##
+
+Prohibited actions are actions not allowed by the current stage and the robots had negative feedbacks by the ```negative scores result``` but allowed AI desire from its current state for the correct action.
+
+```
+step: 000001 condition 3: moving right
+possible_actions: [ 0  0  1  1  1 -1] to actions: [['down'], ['right'], ['up'], ['lower']]
+conditions robots doing prohibited action
+Seleted: ('left_1', 97)
+step: 000001 condition 3: moving right
+possible_actions: [ 0  0  1  0  1 -1] to actions: [['down'], ['up'], ['lower']]
+conditions robots doing prohibited action
+Seleted: ('left_1', 97)
+step: 000001 condition 3: moving right
+possible_actions: [ 0  0  1  0  1 -1] to actions: [['down'], ['up'], ['lower']]
+conditions robots doing prohibited action
+Seleted: ('left_1', 97)
+```

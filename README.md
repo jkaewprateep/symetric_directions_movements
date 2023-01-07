@@ -89,3 +89,24 @@ possible_actions: [ 0  0  1  0  1 -1] to actions: [['down'], ['up'], ['lower']]
 conditions robots doing prohibited action
 Seleted: ('left_1', 97)
 ```
+
+## Models ##
+
+The ```LSTM cell size 448``` is a capable size from our experiments with the same input ```input_shape = (1, 16)``` with ```batch_sizes = 500``` .
+
+```
+model = tf.keras.models.Sequential([
+tf.keras.layers.InputLayer(input_shape=input_shape),
+
+tf.keras.layers.Dense(512, activation='relu'),
+
+tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(448, return_sequences=True, return_state=False)),
+tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(448, return_sequences=True)),
+
+])
+
+model.add(tf.keras.layers.Flatten())
+model.add(tf.keras.layers.Dense(192))
+model.add(tf.keras.layers.Dense(5))
+model.summary()
+```

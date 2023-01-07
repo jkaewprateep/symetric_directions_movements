@@ -360,7 +360,7 @@ class AgentQueue:
 		contr13 = 1
 		contr14 = 1
 		contr15 = 1
-		contr16 = ( self.possible_actions[5] * self.steps ) + self.gamescores
+		contr16 = ( -1 * self.possible_actions[5] * self.steps ) + self.gamescores
 		
 		list_input.append( contrl )
 		list_input.append( contr2 )

@@ -2,7 +2,7 @@
 
 For study symmetric directions movements, for 2D movements once simulation found the problems AI reverse action movement target result from changed in X, Y co-ordinates is reversed travel or it decreases of the value than increase along with our internal class step. 
 
-Out goals is to study of the 2D movements and games rules within the game environment to simulates AI play from the third-eyes views to screen play. One problem we alway found is without central and distance as in the PyGame website example it has the problem circle talks in the corners when it cannot act correct since the action is reversed by the change from increate to decreate value. See the attached GIF image for example, the AI select to continue by go ```LEFT``` instead of ```RIGHT``` . 
+Out goals is to study of the 2D movements and games rules within the game environment to simulates AI play from the third-eyes views to screen play. One problem we alway found is without central and distance as in the PyGame website example it has the problem circle talks in the corners when it cannot act correct since the action is reversed by the change from increate to decreate value. See the attached GIF image for example, the AI select to continue by go ```LEFT``` instead of ```RIGHT``` and ```UP``` instead of ```DOWN``` .
 
 
 ## X and Y Co-ordinates variances ##

@@ -8,6 +8,8 @@ In simulations to find the rims of the stage of the snake games, we found that A
 
 Now from the picture we see that we can devided it into upper path and lower path where the AI work loads is 1/4 or less because it does not need to learn of the next action and the next action to return to lower path continue. 
 
+![Diagonos line](https://github.com/jkaewprateep/symetric_directions_movements/blob/main/97.png "Diagonos line")
+
 ```
 ( X, Y ); X and Y Co-ordinates for the snakes player.
 

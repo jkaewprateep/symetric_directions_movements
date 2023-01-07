@@ -1,5 +1,6 @@
 # symetric_directions_movements
-For study symmetric directions movements
+
+For study symmetric directions movements, for 2D movements once simulation found the problems AI reverse action movement target result from changed in X, Y co-ordinates is reversed travel or it decreases of the value than increase along with our internal class step. 
 
 
 ## X and Y Co-ordinates variances ##

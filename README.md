@@ -14,6 +14,8 @@ Now from the picture we see that we can devided it into upper path and lower pat
 ![Diagonos line](https://github.com/jkaewprateep/symetric_directions_movements/blob/main/98.png "Diagonos line") 
 ![Diagonos line](https://github.com/jkaewprateep/symetric_directions_movements/blob/main/Snakes_Unsupervised_10minutes_learning_SGD%20%2B%20MSE%2002%20.gif "Diagonos line")
 
+#### Out background logical for AI 2D movements in stage with 3rd eyes views ####
+
 ```
 ( X, Y ); X and Y Co-ordinates for the snakes player.
 

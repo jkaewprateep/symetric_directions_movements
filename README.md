@@ -16,6 +16,8 @@ Now from the picture we see that we can devided it into upper path and lower pat
 
 #### Out background logical for AI 2D movements in stage with 3rd eyes views ####
 
+The ```( X, Y )``` is X and Y co-ordinates and turns each corner ```1. ( 512, 256)   ==> UP``` ,  ```2. ( 512, 512)   ==> LEFT``` ,  ```3. ( 0, 512)     ==> DOWN``` and ```( 0, 0 )      ==> RIGHT``` . The possible action number 5 is possible ```{ -1 | 0 | 1 }``` for ```{ upper path | none | lower path }``` when start step is increase and pass between zones it decrease.
+
 ```
 ( X, Y ); X and Y Co-ordinates for the snakes player.
 

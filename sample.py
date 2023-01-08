@@ -134,14 +134,14 @@ class AgentQueue:
 		if snake_head_x == self.previous_snake_head_x and snake_head_y > self.previous_snake_head_y : 
 			print( "step: " + str( self.steps ).zfill(6) + " condition 1: moving up" )
 			stage_position[2] = 0
-			stage_position[5] = 1
+			stage_position[5] = -1
 			
 		### lower path ###	
 			
 		if snake_head_x == self.previous_snake_head_x and snake_head_y < self.previous_snake_head_y : 
 			print( "step: " + str( self.steps ).zfill(6) + " condition 2: moving down" )
 			stage_position[4] = 0
-			stage_position[5] = -1
+			stage_position[5] = 1
 		
 		### lower path ###
 		
@@ -310,12 +310,7 @@ class AgentQueue:
 		snake_head_y = self.read_current_state('snake_head_y')
 		food_x = self.read_current_state('food_x')
 		food_y = self.read_current_state('food_y')
-		
-		if self.reward < 0 :
-			self.steps = 0
-			self.previous_snake_head_x = snake_head_x
-			self.previous_snake_head_y = snake_head_y
-		
+
 		if ( to_action ) :
 		
 			self.possible_actions = self.request_possible_action()
@@ -399,6 +394,11 @@ class AgentQueue:
 		
 		self.DATA = self.DATA[-500:,:,:,:]
 		self.LABEL = self.LABEL[-500:,:,:,:]
+		
+		if self.reward < 0 :
+			self.steps = 0
+			self.previous_snake_head_x = snake_head_x
+			self.previous_snake_head_y = snake_head_y
 	
 		return self.DATA, self.LABEL, self.steps
 
